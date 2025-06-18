@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8" />
+    <title>История заявок</title>
+    <link rel="stylesheet" href="prof.css" />
+</head>
+<body>
+
+    <aside class="sidebar">
+        <div class="user-info">
+            <strong>Добро пожаловать,</strong>
+            <p id="username">Пользователь</p>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="dashboard.html">Главная</a></li>
+                <li><a href="profile.html">Профиль</a></li>
+                <li><a href="history.html" class="active">История заявок</a></li>
+                <li><a href="#" onclick="logout()">Выйти</a></li>
+            </ul>
+        </nav>
+    </aside>
+
+<main class="main-content">
+    <div class="content-wrapper">
+
+        <header class="page-header">
+            <h1>Ваши заявки</h1>
+            <p>Список ранее отправленных заявок</p>
+        </header>
+
+        <div id="requests-list" class="requests-container">
+            <p>Загрузка заявок...</p>
+        </div>
+
+    </div>
+</main>
+
+    <script src="script.js"></script>
+</body>
+</html>

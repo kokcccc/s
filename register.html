@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Регистрация</title>
+    <link rel="stylesheet" href="regaut.css">
+</head>
+<body>
+
+    <div class="auth-container">
+        <h2>Регистрация</h2>
+        <form onsubmit="register(); return false;">
+            <input type="text" id="regLogin" placeholder="Логин" required>
+            <input type="password" id="regPassword" placeholder="Пароль" required>
+            <button type="submit">Зарегистрироваться</button>
+        </form>
+        <p class="switch-link">Уже есть аккаунт? <a href="index.html">Войдите</a></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

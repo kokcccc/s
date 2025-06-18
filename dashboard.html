@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8" />
+    <title>Выбор программ</title>
+    <link rel="stylesheet" href="dash.css" />
+</head>
+<body>
+
+<aside class="sidebar">
+    <div class="user-info">
+        <strong>Добро пожаловать,</strong>
+        <p id="username">Пользователь</p>
+    </div>
+    <nav>
+        <ul>
+            <li><a href="dashboard.html"><span>Главная</span></a></li>
+            <li><a href="profile.html" class="active"><span>👤 Профиль</span></a></li>
+            <li><a href="history.html"><span>📁 История заявок</span></a></li>
+            <li><a href="#" onclick="logout()"><span>🚪 Выйти</span></a></li>
+        </ul>
+    </nav>
+</aside>
+
+    <main class="main-content">
+
+        <header class="page-header">
+            <h1>Выберите программы для установки</h1>
+            <p>Нажмите на нужные программы, чтобы выбрать их</p>
+        </header>
+
+        <div class="program-grid">
+
+            <div class="program-card" onclick="toggleSelect(this)">
+                <div class="icon chromium"></div>
+                <span>Chromium</span>
+            </div>
+
+            <div class="program-card" onclick="toggleSelect(this)">
+                <div class="icon landocs"></div>
+                <span>LanDocs</span>
+            </div>
+
+            <div class="program-card" onclick="toggleSelect(this)">
+                <div class="icon kasper"></div>
+                <span>Kasper</span>
+            </div>
+
+            <div class="program-card" onclick="toggleSelect(this)">
+                <div class="icon netagent"></div>
+                <span>NetAgent</span>
+            </div>
+
+            <div class="program-card" onclick="toggleSelect(this)">
+                <div class="icon office"></div>
+                <span>Office</span>
+            </div>
+
+            <div class="program-card" onclick="toggleSelect(this)">
+                <div class="icon kriptobot"></div>
+                <span>KriptoBot</span>
+            </div>
+
+            <div class="program-card" onclick="toggleSelect(this)">
+                <div class="icon plugins"></div>
+                <span>Plugins</span>
+            </div>
+
+            <div class="program-card" onclick="toggleSelect(this)">
+                <div class="icon secretnet"></div>
+                <span>SecretNet</span>
+            </div>
+
+            <div class="program-card" onclick="toggleSelect(this)">
+                <div class="icon spark"></div>
+                <span>Spark</span>
+            </div>
+
+            <div class="program-card" onclick="toggleSelect(this)">
+                <div class="icon adobereader"></div>
+                <span>AdobeReader</span>
+            </div>
+
+            <div class="program-card" onclick="toggleSelect(this)">
+                <div class="icon 7zip"></div>
+                <span>7zip</span>
+            </div>
+
+        </div>
+
+        <button class="submit-btn" onclick="submitRequest()">Отправить запрос</button>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

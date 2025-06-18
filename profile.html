@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8" />
+    <title>Профиль</title>
+    <link rel="stylesheet" href="prof.css" />
+</head>
+<body>
+
+    <aside class="sidebar">
+        <div class="user-info">
+            <strong>Добро пожаловать,</strong>
+            <p id="username">Пользователь</p>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="dashboard.html">Главная</a></li>
+                <li><a href="profile.html" class="active">Профиль</a></li>
+                <li><a href="history.html">История заявок</a></li>
+                <li><a href="#" onclick="logout()">Выйти</a></li>
+            </ul>
+        </nav>
+    </aside>
+
+<main class="main-content">
+    <div class="content-wrapper">
+
+        <header class="page-header">
+            <h1>Профиль пользователя</h1>
+            <p>Информация о вашем аккаунте</p>
+        </header>
+
+        <div class="profile-card">
+            <div class="avatar">👤</div>
+            <h2 id="profile-username">Загрузка...</h2>
+            <p><strong>Email:</strong> Не указан</p>
+            <p><strong>Дата регистрации:</strong> <span id="profile-created">-</span></p>
+        </div>
+
+    </div>
+</main>
+
+    <script src="script.js"></script>
+</body>
+</html>
